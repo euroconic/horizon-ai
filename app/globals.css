@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-ink text-slate-100 antialiased;
+}
+
+/* Highlight for unresolved [Insert Metric ...] placeholders from the
+   Hallucination Buffer rule (PRD section 4). */
+.metric-placeholder {
+  @apply bg-warn/20 text-warn rounded px-1 font-medium;
+}
