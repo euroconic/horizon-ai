@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.65.0",
+    "@google/genai": "^2.8.0",
     "mammoth": "^1.8.0",
     "next": "^15.5.4",
     "pdf-parse": "^1.1.1",

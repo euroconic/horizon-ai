@@ -1,7 +1,7 @@
 // POST /api/interview — Module 2: STAR unpacker. Generates one clarifying
 // question at a time, hard-capped at MAX_INTERVIEW_QUESTIONS.
 import { NextRequest, NextResponse } from "next/server";
-import { complete, extractJson } from "@/lib/anthropic";
+import { complete, extractJson } from "@/lib/llm";
 import { interviewSystem, MODEL } from "@/lib/prompts";
 import {
   MAX_INTERVIEW_QUESTIONS,

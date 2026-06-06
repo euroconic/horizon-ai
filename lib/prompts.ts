@@ -94,6 +94,6 @@ ${qa.length ? qa.map((h, i) => `${i + 1}. ${h.question}\n   -> ${h.answer}`).joi
 Сгенерируй финальное англоязычное резюме в Markdown по правилам системного промпта.`;
 }
 
-// Model + token defaults.
-export const MODEL = "claude-3-5-sonnet-latest";
+// Model + token defaults. Core Intelligence Layer runs on Google Gemini.
+export const MODEL = "gemini-2.5-flash";
 export const MAX_TOKENS = 4096;

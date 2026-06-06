@@ -1,7 +1,7 @@
 // POST /api/generate — Module 3: the downleveling engine. Turns a CIS top-manager
 // profile + STAR answers into a Senior IC resume in target-market Markdown.
 import { NextRequest, NextResponse } from "next/server";
-import { complete } from "@/lib/anthropic";
+import { complete } from "@/lib/llm";
 import {
   downlevelSystem,
   downlevelUserMessage,

@@ -1,7 +1,7 @@
 // POST /api/parse — Module 1: parse raw resume (file or text) into ResumeProfile.
 // Node runtime: pdf-parse/mammoth need Node APIs (Buffer), not the edge runtime.
 import { NextRequest, NextResponse } from "next/server";
-import { complete, extractJson } from "@/lib/anthropic";
+import { complete, extractJson } from "@/lib/llm";
 import { extractText } from "@/lib/extract";
 import { PARSE_SYSTEM, MODEL, MAX_TOKENS } from "@/lib/prompts";
 import type { ParseResponse, ResumeProfile, ApiError } from "@/lib/types";
